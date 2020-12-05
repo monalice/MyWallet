@@ -1,6 +1,9 @@
 node_modules
 .pnp
 .pnp.js
+public/bundle.js
+public/bundle.js.LICENSE.txt
+public/bundle.js.map
 
 # testing
 /coverage

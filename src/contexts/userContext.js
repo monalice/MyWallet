@@ -20,7 +20,7 @@ export function UserProvider(props){
         e.preventDefault();
 
         const body = { email, password };
-        const req = axios.post('localhost:3000/login', body);
+        const req = axios.post('https://mywallet-api.herokuapp.com/sign-in', body);
         req.then((response) => {
             history.push('/home')
         })
@@ -37,7 +37,7 @@ export function UserProvider(props){
         }
 
         const body = { name, email, password, confirmPassword };
-        const req = axios.post('localhost:3000/sign-up', body);
+        const req = axios.post('https://mywallet-api.herokuapp.com/sign-up', body);
         req.then((response) => {
             alert('Cadastrado! Realize o LogIn!');
             setTask(true);
